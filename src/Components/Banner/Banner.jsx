@@ -1,6 +1,7 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import me from "../../assets/me.jpg";
+import { FaArrowDown, FaFacebook, FaGithub, FaLinkedin, FaLongArrowAltDown } from "react-icons/fa";
 
 const Banner = () => {
     return (
@@ -17,7 +18,7 @@ const Banner = () => {
                         ]}
                         wrapper="span"
                         speed={50}
-                        className="text-4xl md:text-6xl text-blue-500" // <-- Only changing word has this style
+                        className="text-3xl md:text-5xl text-blue-500" // <-- Only changing word has this style
                         repeat={Infinity}
                     />
                 </div>
@@ -31,6 +32,14 @@ const Banner = () => {
                     beautiful, responsive, and functional websites that deliver
                     exceptional user experiences.
                 </p>
+                <div className="flex gap-3">
+                <a href="https://github.com/jisan-05" className="text-4xl" target="_blank"><FaGithub /></a>
+                <a href="https://www.linkedin.com/in/tanvirahmedjisan/" className="text-4xl" target="_blank"><FaLinkedin></FaLinkedin></a>
+                <a href="https://www.facebook.com/tanvir.ahmed.jisan.2024/" className="text-4xl" target="_blank"><FaFacebook></FaFacebook></a>
+                </div>
+                <div>
+                  <button className="btn p-6 bg-blue-600 hover:bg-blue-700 hover:translate-y-[3px] transition-all duration-400">Download Resume <FaArrowDown  /></button>
+                </div>
             </div>
             <div className="md:w-1/2 ">
                 <img

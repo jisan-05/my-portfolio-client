@@ -5,7 +5,7 @@ import './MainLayout.css'
 
 const MainLayout = () => {
   return (
-    <div className='bg-1'>
+    <div className='bg-1 px-4'>
       <Home></Home>
     </div>
   );
