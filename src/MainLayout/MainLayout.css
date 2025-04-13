@@ -1,6 +1,8 @@
+/* this is for background image 1  */
+
 .bg-1{
   background-image: url('https://i.ibb.co.com/Gff9vfk4/bg-1.jpg');
-  background-color: rgba(0, 0, 0, 0.548); /* Dark overlay */
+  background-color: rgba(0, 0, 0, 0.329); /* Dark overlay */
   background-blend-mode: darken;
   background-size: cover;
   background-position: center;
@@ -8,3 +10,34 @@
   height: 100%;
 
 }
+/* ------------------ End ------------------- */
+
+.bg-2{
+  
+    /* background: linear-gradient(135deg, #050505 0%, #0b0c1d 25%, #15172b 50%, #1e1f3f 75%, #2c1f4a 100%); */
+    background: linear-gradient(
+    180deg,
+    #0a0a1a 0%,           /* Softened black-blue */
+    #121530 20%,          /* Deep navy */
+    #1a1d45 45%,          /* Rich blue-purple */
+    #252a6a 70%,          /* Vibrant mid-tone */
+    #3a3a8a 90%,          /* Lightened purple-blue */
+    #4a4a9a 100%          /* Soft endpoint (not too dark) */
+);
+background-color: rgba(1, 1, 44, 0.856);
+
+    /* background: linear-gradient(to top, #050505 0%, #0b0c1d 20%, #15172b 43%, #1e1f3f 66%, #2c1f4a 100%); */
+
+
+
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* ✅ Enables parallax */
+    height: 100%; /* 🛠️ Use 100vh instead of 100% for visible parallax */
+
+}
+
+/* This is for background image 2  */
+
