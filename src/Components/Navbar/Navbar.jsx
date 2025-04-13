@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
     return (
-        <div className="navbar shadow-sm md:max-w-10/12 mx-auto pl-0">
+        <div className="navbar shadow-sm pl-0">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div
@@ -50,7 +50,7 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost  text-3xl">JISAN</a>
+                <a className="text-xl md:text-3xl ">JISAN</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -75,7 +75,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn bg-blue-600 hover:bg-blue-700">Download Resume</a>
+                <a className="btn p-2 md:p-4 bg-blue-600 hover:bg-blue-700">Download Resume</a>
             </div>
         </div>
     );
