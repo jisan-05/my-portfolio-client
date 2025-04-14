@@ -31,46 +31,42 @@ const Navbar = () => {
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
                     >
                         <li>
-                            <a>Home</a>
+                            <a href="#home">Home</a>
                         </li>
                         <li>
-                            <a>About Me</a>
+                            <a href="#about">About Me</a>
+                        </li>
+                        <li >
+                            <a href="#skill">Skill</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#project">Project</a>
                         </li>
                         <li>
-                            <a>Skill</a>
-                        </li>
-                        <li>
-                            <a>Education</a>
-                        </li>
-                        <li>
-                            <a>Project</a>
-                        </li>
-                        <li>
-                            <a>Contact</a>
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
-                <a className="text-xl md:text-3xl ">JISAN</a>
+                <a className="text-xl md:text-4xl ">JISAN</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     <li>
-                        <a>Home</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li>
-                        <a>About Me</a>
+                        <a href="#about">About Me</a>
                     </li>
                     <li>
-                        <a>Skill</a>
+                        <a href="#skill">Skill</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#project">Project</a>
                     </li>
                     <li>
-                        <a>Education</a>
-                    </li>
-                    <li>
-                        <a>Project</a>
-                    </li>
-                    <li>
-                        <a>Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>

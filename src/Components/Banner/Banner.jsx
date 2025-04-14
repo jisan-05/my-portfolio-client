@@ -11,16 +11,19 @@ import {
 
 const Banner = () => {
     return (
-        <div className=" mx-auto md:flex items-center justify-center min-h-[700px]">
+        <div
+            className=" mx-auto md:flex items-center justify-center min-h-[800px]"
+            id="home"
+        >
             <div className="md:hidden md:w-1/2 ">
                 <img
-                    className="w-72 h-72 lg:w-[420px] lg:h-[420px] rounded-[50%] mx-auto border-blue-900 border-4"
+                    className="w-72 h-72 lg:w-[420px] lg:h-[420px] rounded-[50%] mx-auto border-blue-950 border-4 my-7"
                     src={me}
                     alt=""
                 />
             </div>
             <div className="md:w-1/2 space-y-5">
-                <div className="text-3xl md:text-5xl font-semibold">
+                <div className="text-3xl md:text-[44px] font-semibold">
                     Hi, I’m{" "}
                     <TypeAnimation
                         sequence={[
@@ -31,7 +34,7 @@ const Banner = () => {
                         ]}
                         wrapper="span"
                         speed={50}
-                        className="text-3xl md:text-5xl text-blue-500" // <-- Only changing word has this style
+                        className="text-3xl md:text-[44px] text-blue-500" // <-- Only changing word has this style
                         repeat={Infinity}
                     />
                 </div>
@@ -76,7 +79,7 @@ const Banner = () => {
             </div>
             <div className="hidden md:flex md:w-1/2 ">
                 <img
-                    className="w-72 h-72 lg:w-[420px] lg:h-[420px] rounded-[50%] mx-auto border-blue-900 border-4"
+                    className=" w-72 h-72 lg:w-[420px] lg:h-[420px] rounded-[50%] mx-auto border-blue-950 border-4 "
                     src={me}
                     alt=""
                 />
