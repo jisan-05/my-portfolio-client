@@ -8,7 +8,7 @@ import Contact from "../Components/Contact/Contact";
 const MainSection = () => {
     return (
         <div>
-            <div className="max-w-[94%] md:max-w-[92%] mx-auto md:px-10 lg:px-20">
+            <div className="max-w-[96%] sm:max-w-[94%] md:max-w-[94%] lg:max-w-[92%] 2xl:max-w-[1600px] mx-auto">
                 <AboutMe></AboutMe>
                 <Skill></Skill>
                 <MyProject></MyProject>

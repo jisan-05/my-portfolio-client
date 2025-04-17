@@ -1,8 +1,8 @@
 import React from "react";
 import project1 from "../../assets/Project/project-1.png";
 import project2 from "../../assets/Project/project-2.png";
-import project3 from "../../assets/Project/project-3.png";
-import project4 from "../../assets/Project/project-4.png";
+import project4 from "../../assets/Project/project-3.png";
+import project3 from "../../assets/Project/project-4.png";
 
 const MyProject = () => {
     return (
@@ -17,18 +17,18 @@ const MyProject = () => {
                             <img src={project1} alt="Project1" />
                         </figure>
                         <div className="card-body">
-                            <h2 className="card-title">Ecommerce Website</h2>
+                            <h2 className="card-title">Restaurant Website</h2>
                             <p>
-                                A crowdfunding website is a platform where
-                                people can raise money for different projects,
-                                ideas, or causes by inviting others to
-                                contribute financially.
+                                A stylish and user-friendly restaurant website
+                                featuring menu highlights, reservation booking,
+                                and contact info to enhance the dining
+                                experience
                             </p>
                             <div className="card-actions">
                                 <a
                                     className="w-full"
                                     target="_blank"
-                                    href="https://jisan-05.github.io/Bootstrap-ecommerce-project/"
+                                    href="https://bistro-boss-fced1.web.app/"
                                 >
                                     {" "}
                                     <button className="btn bg-blue-600 hover:bg-blue-700 w-full">
@@ -45,10 +45,9 @@ const MyProject = () => {
                         <div className="card-body">
                             <h2 className="card-title">Tech Website</h2>
                             <p>
-                                A crowdfunding website is a platform where
-                                people can raise money for different projects,
-                                ideas, or causes by inviting others to
-                                contribute financially.
+                                A modern e-commerce platform for tech gadgets,
+                                showcasing the latest products with sleek
+                                design, smart filtering, and easy checkout.
                             </p>
                             <div className="card-actions">
                                 <a
@@ -69,18 +68,18 @@ const MyProject = () => {
                             <img src={project3} alt="Project1" />
                         </figure>
                         <div className="card-body">
-                            <h2 className="card-title">Gym Website</h2>
+                            <h2 className="card-title">Shop Website</h2>
                             <p>
-                                A crowdfunding website is a platform where
-                                people can raise money for different projects,
-                                ideas, or causes by inviting others to
-                                contribute financially.
+                                A professional mobile shop website offering a
+                                wide range of smartphones and accessories with
+                                detailed specs, reviews, and shopping cart
+                                functionality.
                             </p>
                             <div className="card-actions">
                                 <a
                                     className="w-full"
                                     target="_blank"
-                                    href="https://jisan-05.github.io/my-assignment-2/"
+                                    href="https://jisan-05.github.io/Bootstrap-ecommerce-project/"
                                 >
                                     {" "}
                                     <button className="btn bg-blue-600 hover:bg-blue-700 w-full">
@@ -95,18 +94,17 @@ const MyProject = () => {
                             <img src={project4} alt="Project1" />
                         </figure>
                         <div className="card-body">
-                            <h2 className="card-title">Croudcube Website</h2>
+                            <h2 className="card-title">Gym Website</h2>
                             <p>
-                                A crowdfunding website is a platform where
-                                people can raise money for different projects,
-                                ideas, or causes by inviting others to
-                                contribute financially.
+                                A dynamic and energetic gym website that
+                                promotes fitness programs, trainer bios, class
+                                schedules, and membership options
                             </p>
                             <div className="card-actions">
                                 <a
                                     className="w-full"
                                     target="_blank"
-                                    href="https://crowdcube-client.onrender.com/"
+                                    href="https://jisan-05.github.io/my-assignment-2/"
                                 >
                                     {" "}
                                     <button className="btn bg-blue-600 hover:bg-blue-700 w-full">
