@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
 import me from "../../assets/me.jpg";
+
 import {
     FaArrowDown,
     FaFacebook,
@@ -8,21 +9,32 @@ import {
     FaLinkedin,
     FaLongArrowAltDown,
 } from "react-icons/fa";
+import AOS from 'aos'; 
+import 'aos/dist/aos.css';
+
 
 const Banner = () => {
+
+    useEffect(() => {
+        AOS.init({
+          duration: 1600, // Animation duration
+          once: true,     // Whether animation should happen only once while scrolling down
+        });
+      }, []);
+
     return (
-        <div
+        <div 
             className=" mx-auto md:flex items-center justify-center min-h-[800px]"
             id="home"
         >
-            <div className="md:hidden md:w-1/2 ">
+            <div data-aos="fade-up" className="md:hidden md:w-1/2 ">
                 <img
                     className="w-72 h-72 lg:w-[420px] lg:h-[420px] rounded-[50%] mx-auto border-blue-950 border-4 my-7"
                     src={me}
                     alt=""
                 />
             </div>
-            <div className="md:w-1/2 space-y-5">
+            <div data-aos="fade-up" className="md:w-1/2 space-y-5">
                 <div className="text-3xl md:text-[44px] font-semibold">
                     Hi, I’m{" "}
                     <TypeAnimation
@@ -77,7 +89,7 @@ const Banner = () => {
                     </button>
                 </div>
             </div>
-            <div className="hidden md:flex md:w-1/2 ">
+            <div data-aos="fade-up" className="hidden md:flex md:w-1/2 ">
                 <img
                     className=" w-72 h-72 lg:w-[420px] lg:h-[420px] rounded-[50%] mx-auto border-blue-950 border-4 "
                     src={me}

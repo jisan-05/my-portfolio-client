@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Marquee from "react-fast-marquee";
 import html from "../../assets/technology/html.png";
 import css from "../../assets/technology/css.png";
@@ -11,6 +11,8 @@ import express from "../../assets/technology/express.png";
 import mongodb from "../../assets/technology/mongodb.png";
 import reactrouter from "../../assets/technology/reactrouter.png";
 import firebase from "../../assets/technology/firebase.png";
+import AOS from 'aos'; 
+import 'aos/dist/aos.css';
 
 // import github from "../../assets/technology/github.png";
 // import git from "../../assets/technology/git.png";
@@ -20,10 +22,16 @@ import firebase from "../../assets/technology/firebase.png";
 // import vscode from "../../assets/technology/vscode.png";
 
 const Skill = () => {
+    useEffect(() => {
+        AOS.init({
+          duration: 1600, // Animation duration
+          once: true,     // Whether animation should happen only once while scrolling down
+        });
+      }, []);
     return (
         <div>
-            <div className="pt-14 md:pt-44 md:pb-44" id="skill">
-                <div>
+            <div  className="pt-14 md:pt-44 md:pb-44" id="skill">
+                <div data-aos="fade-up">
                     <h3 className="text-3xl md:text-[44px] text-center">
                         Skill
                     </h3>
@@ -35,11 +43,11 @@ const Skill = () => {
                         life with precision and creativity.
                     </p>
                 </div>
-                <div className="">
+                <div data-aos="fade-up"  className="">
                     <h3 className="text-3xl text-center mt-10">
                         Front End Technology
                     </h3>
-                    <div className="my-15 relative grid grid-cols-4 md:grid-cols-7 items-center justify-center">
+                    <div  className="my-15 relative grid grid-cols-4 md:grid-cols-7 items-center justify-center">
                         <img
                             src={html}
                             alt=""

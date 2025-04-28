@@ -1,17 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import project1 from "../../assets/Project/project-1.png";
 import project2 from "../../assets/Project/project-2 .png";
 import project3 from "../../assets/Project/project-3.png";
 import project4 from "../../assets/Project/project-4.png";
+import AOS from 'aos'; 
+import 'aos/dist/aos.css';
 
 const MyProject = () => {
+    useEffect(() => {
+        AOS.init({
+          duration: 1600, // Animation duration
+          once: true,     // Whether animation should happen only once while scrolling down
+        });
+      }, []);
     return (
         <div>
             <div className="pt-14 pb-14 md:pt-44 md:pb-44 " id="project">
                 <h3 className="text-3xl md:text-[44px] text-center mb-16">
                     My Project
                 </h3>
-                <div className="grid gird-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div data-aos="fade-up" className="grid gird-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10">
                     <div className="card bg-base-100 w-full  shadow-sm">
                         <figure>
                             <img src={project1} alt="Project1" />

@@ -1,6 +1,7 @@
 import React from "react";
 import Lottie from "lottie-react";
-import laptopAnimation from '../../../public/laptop-animation.json'
+import laptopAnimation from "../../assets/laptop-animation.json";
+import { motion } from "framer-motion";
 
 const AboutMe = () => {
     return (
@@ -15,30 +16,46 @@ const AboutMe = () => {
                     </p>
                 </div>
                 <div className="flex flex-col lg:flex-row items-center mt-14">
-                    <div className="w-full lg:w-1/2">
-                        <Lottie animationData={laptopAnimation} className=""></Lottie>
-                    </div>
-                    <div className="w-full lg:w-1/2">
-                    <p className="mx-auto lg:text-xl">
-                        Hi, I'm Tanvir Ahmed Jisan, a passionate frontend
-                        developer with a strong foundation in HTML, CSS,
-                        JavaScript, React, Node.js, Express.js, MongoDB, Git ,
-                        and GitHub. I specialize in creating visually appealing,
-                        responsive, and user-friendly web experiences that
-                        combine aesthetics with functionality. With hands-on
-                        experience in building projects ranging from simple
-                        landing pages to complex web applications, I have honed
-                        my skills in delivering seamless user experiences. My
-                        goal is to transform creative ideas into impactful
-                        digital products that stand out. Beyond coding, I’m
-                        committed to staying updated with the latest web
-                        development trends and continuously expanding my
-                        expertise in modern technologies. I thrive on learning
-                        and enjoy exploring innovative solutions to challenging
-                        problems. Let’s collaborate and bring amazing ideas to
-                        life!
-                    </p>
-                    </div>
+                    <motion.div
+                        initial={{ opacity: 0, x: -100 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8 }}
+                        viewport={{ once: true }}
+                        className="w-full lg:w-1/2"
+                    >
+                        <Lottie
+                            animationData={laptopAnimation}
+                            className=""
+                        ></Lottie>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, x: 100 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8 }}
+                        viewport={{ once: true }}
+                        className="w-full lg:w-1/2"
+                    >
+                        <p className="mx-auto lg:text-xl">
+                            Hi, I'm Tanvir Ahmed Jisan, a passionate frontend
+                            developer with a strong foundation in HTML, CSS,
+                            JavaScript, React, Node.js, Express.js, MongoDB, Git
+                            , and GitHub. I specialize in creating visually
+                            appealing, responsive, and user-friendly web
+                            experiences that combine aesthetics with
+                            functionality. With hands-on experience in building
+                            projects ranging from simple landing pages to
+                            complex web applications, I have honed my skills in
+                            delivering seamless user experiences. My goal is to
+                            transform creative ideas into impactful digital
+                            products that stand out. Beyond coding, I’m
+                            committed to staying updated with the latest web
+                            development trends and continuously expanding my
+                            expertise in modern technologies. I thrive on
+                            learning and enjoy exploring innovative solutions to
+                            challenging problems. Let’s collaborate and bring
+                            amazing ideas to life!
+                        </p>
+                    </motion.div>
                 </div>
             </div>
             <div className="divider my-0"></div>

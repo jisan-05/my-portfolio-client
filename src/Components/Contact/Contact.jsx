@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
     FaFacebook,
     FaGithub,
@@ -9,6 +9,9 @@ import {
 import { FaMessage } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import Swal from "sweetalert2";
+import 'aos/dist/aos.css'; 
+import AOS from 'aos'; 
+
 
 const Contact = () => {
     const handleSubmit = () => {
@@ -21,6 +24,13 @@ const Contact = () => {
         });
     };
 
+    useEffect(() => {
+        AOS.init({
+          duration: 1400, // Animation duration
+          once: true,     // Whether animation should happen only once while scrolling down
+        });
+      }, []);
+
     return (
         <div>
             <div className="pt-14 md:pt-44 md:pb-44" id="contact">
@@ -28,7 +38,7 @@ const Contact = () => {
                     Contact With Me
                 </h2>
                 <div className="md:flex justify-around">
-                    <div className="md:w-[40%]">
+                    <div data-aos="fade-right" className="md:w-[40%]">
                         <h3 className="text-3xl mb-3">Contact details</h3>
                         <div>
                             <p>
@@ -62,7 +72,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="divider lg:divider-horizontal"></div>
-                    <div className="md:w-[40%]">
+                    <div data-aos="fade-left" className="md:w-[40%]">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
                             <div>
                                 <label className="fieldset-label mb-1">
