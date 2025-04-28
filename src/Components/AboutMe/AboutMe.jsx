@@ -1,4 +1,6 @@
 import React from "react";
+import Lottie from "lottie-react";
+import laptopAnimation from '../../../public/laptop-animation.json'
 
 const AboutMe = () => {
     return (
@@ -12,8 +14,12 @@ const AboutMe = () => {
                         Learn more about me
                     </p>
                 </div>
-                <div>
-                    <p className="max-w-11/12 md:max-w-10/12 mx-auto mt-10">
+                <div className="flex flex-col lg:flex-row items-center mt-14">
+                    <div className="w-full lg:w-1/2">
+                        <Lottie animationData={laptopAnimation} className=""></Lottie>
+                    </div>
+                    <div className="w-full lg:w-1/2">
+                    <p className="mx-auto lg:text-xl">
                         Hi, I'm Tanvir Ahmed Jisan, a passionate frontend
                         developer with a strong foundation in HTML, CSS,
                         JavaScript, React, Node.js, Express.js, MongoDB, Git ,
@@ -32,6 +38,7 @@ const AboutMe = () => {
                         problems. Let’s collaborate and bring amazing ideas to
                         life!
                     </p>
+                    </div>
                 </div>
             </div>
             <div className="divider my-0"></div>

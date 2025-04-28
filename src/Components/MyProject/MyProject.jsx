@@ -1,8 +1,8 @@
 import React from "react";
 import project1 from "../../assets/Project/project-1.png";
-import project2 from "../../assets/Project/project-2.png";
-import project4 from "../../assets/Project/project-3.png";
-import project3 from "../../assets/Project/project-4.png";
+import project2 from "../../assets/Project/project-2 .png";
+import project3 from "../../assets/Project/project-3.png";
+import project4 from "../../assets/Project/project-4.png";
 
 const MyProject = () => {
     return (
@@ -17,18 +17,18 @@ const MyProject = () => {
                             <img src={project1} alt="Project1" />
                         </figure>
                         <div className="card-body">
-                            <h2 className="card-title">Restaurant Website</h2>
+                            <h2 className="card-title">Job Portal Website</h2>
                             <p>
-                                A stylish and user-friendly restaurant website
-                                featuring menu highlights, reservation booking,
-                                and contact info to enhance the dining
-                                experience
+                            A modern MERN stack job portal with user registration, job posting, applications, and smooth real-time performance.
+
+
                             </p>
                             <div className="card-actions">
                                 <a
                                     className="w-full"
                                     target="_blank"
-                                    href="https://bistro-boss-fced1.web.app/"
+                                    href="https://job-portal-a-1852b.web.app/"
+                                    
                                 >
                                     {" "}
                                     <button className="btn bg-blue-600 hover:bg-blue-700 w-full">
@@ -43,17 +43,18 @@ const MyProject = () => {
                             <img src={project2} alt="Project1" />
                         </figure>
                         <div className="card-body">
-                            <h2 className="card-title">Tech Website</h2>
+                            <h2 className="card-title">Restaurant Website </h2>
                             <p>
-                                A modern e-commerce platform for tech gadgets,
-                                showcasing the latest products with sleek
-                                design, smart filtering, and easy checkout.
+                                A stylish and user-friendly restaurant website
+                                featuring menu highlights, reservation booking,
+                                and contact info to enhance the dining
+                                experience
                             </p>
                             <div className="card-actions">
                                 <a
                                     className="w-full"
                                     target="_blank"
-                                    href="https://scintillating-raindrop-41f4d5.netlify.app/"
+                                    href="https://bistro-boss-fced1.web.app/"
                                 >
                                     {" "}
                                     <button className="btn bg-blue-600 hover:bg-blue-700 w-full">
@@ -79,7 +80,9 @@ const MyProject = () => {
                                 <a
                                     className="w-full"
                                     target="_blank"
-                                    href="https://jisan-05.github.io/Bootstrap-ecommerce-project/"
+                                    href="https://scintillating-raindrop-41f4d5.netlify.app/"
+
+                                   
                                 >
                                     {" "}
                                     <button className="btn bg-blue-600 hover:bg-blue-700 w-full">

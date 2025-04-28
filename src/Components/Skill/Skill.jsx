@@ -27,7 +27,7 @@ const Skill = () => {
                     <h3 className="text-3xl md:text-[44px] text-center">
                         Skill
                     </h3>
-                    <p className="max-w-11/12 md:max-w-1/2 mx-auto mt-10 md:text-center">
+                    <p className="max-w-11/12 lg:max-w-1/2 mx-auto mt-10 md:text-center">
                         Proficient in HTML, CSS, JavaScript, and React.js, I
                         specialize in creating responsive and visually stunning
                         web applications. With a strong foundation in UI/UX
