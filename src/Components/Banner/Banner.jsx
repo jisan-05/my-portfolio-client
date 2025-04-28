@@ -9,21 +9,22 @@ import {
     FaLinkedin,
     FaLongArrowAltDown,
 } from "react-icons/fa";
-import AOS from 'aos'; 
-import 'aos/dist/aos.css';
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Banner = () => {
-
     useEffect(() => {
         AOS.init({
-          duration: 1600, // Animation duration
-          once: true,     // Whether animation should happen only once while scrolling down
+            duration: 1000, // Animation duration
+            once: false, // Whether animation should happen only once while scrolling down
+            delay: 50,
+
+            disable: "mobile",
         });
-      }, []);
+    }, []);
 
     return (
-        <div 
+        <div
             className=" mx-auto md:flex items-center justify-center min-h-[800px]"
             id="home"
         >

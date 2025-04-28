@@ -11,8 +11,8 @@ import express from "../../assets/technology/express.png";
 import mongodb from "../../assets/technology/mongodb.png";
 import reactrouter from "../../assets/technology/reactrouter.png";
 import firebase from "../../assets/technology/firebase.png";
-import AOS from 'aos'; 
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // import github from "../../assets/technology/github.png";
 // import git from "../../assets/technology/git.png";
@@ -24,13 +24,15 @@ import 'aos/dist/aos.css';
 const Skill = () => {
     useEffect(() => {
         AOS.init({
-          duration: 1600, // Animation duration
-          once: true,     // Whether animation should happen only once while scrolling down
+            duration: 1000, // Animation duration
+            once: false, // Whether animation should happen only once while scrolling down
+            delay: 100,
+            disable: "mobile",
         });
-      }, []);
+    }, []);
     return (
         <div>
-            <div  className="pt-14 md:pt-44 md:pb-44" id="skill">
+            <div className="pt-14 md:pt-44 md:pb-44" id="skill">
                 <div data-aos="fade-up">
                     <h3 className="text-3xl md:text-[44px] text-center">
                         Skill
@@ -43,11 +45,11 @@ const Skill = () => {
                         life with precision and creativity.
                     </p>
                 </div>
-                <div data-aos="fade-up"  className="">
+                <div data-aos="fade-up" className="">
                     <h3 className="text-3xl text-center mt-10">
                         Front End Technology
                     </h3>
-                    <div  className="my-15 relative grid grid-cols-4 md:grid-cols-7 items-center justify-center">
+                    <div className="my-15 relative grid grid-cols-4 md:grid-cols-7 items-center justify-center">
                         <img
                             src={html}
                             alt=""

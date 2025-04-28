@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Lottie from "lottie-react";
 import laptopAnimation from "../../assets/laptop-animation.json";
-import { motion } from "framer-motion";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 
 const AboutMe = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000, // Animation duration
+            once: false, // Whether animation should happen only once while scrolling down
+            delay: 100,
+            disable: "mobile",
+        });
+    }, []);
+
     return (
         <div>
             <div className="pt-14 pb-14 md:pt-44 md:mb-44" id="about">
@@ -16,23 +29,17 @@ const AboutMe = () => {
                     </p>
                 </div>
                 <div className="flex flex-col lg:flex-row items-center mt-14">
-                    <motion.div
-                        initial={{ opacity: 0, x: -100 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8 }}
-                        viewport={{ once: true }}
+                    <div
+                        data-aos="fade-right"
                         className="w-full lg:w-1/2"
                     >
                         <Lottie
                             animationData={laptopAnimation}
                             className=""
                         ></Lottie>
-                    </motion.div>
-                    <motion.div
-                        initial={{ opacity: 0, x: 100 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8 }}
-                        viewport={{ once: true }}
+                    </div>
+                    <div
+                        data-aos="fade-left"
                         className="w-full lg:w-1/2"
                     >
                         <p className="mx-auto lg:text-xl">
@@ -55,7 +62,7 @@ const AboutMe = () => {
                             challenging problems. Let’s collaborate and bring
                             amazing ideas to life!
                         </p>
-                    </motion.div>
+                    </div>
                 </div>
             </div>
             <div className="divider my-0"></div>

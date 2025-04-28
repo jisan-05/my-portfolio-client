@@ -3,7 +3,6 @@ import Home from "../Home/Home";
 import "./MainLayout.css";
 import MainSection from "../MainSection/MainSection";
 
-
 const MainLayout = () => {
     return (
         <div className="">
