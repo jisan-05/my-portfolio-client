@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Home/Home.jsx";
 import MainLayout from "./MainLayout/MainLayout.jsx";
+import { Toaster } from "react-hot-toast";
 
 const router = createBrowserRouter([
     {
@@ -22,5 +23,6 @@ const router = createBrowserRouter([
 createRoot(document.getElementById("root")).render(
     <StrictMode>
         <RouterProvider router={router} />
+        <Toaster></Toaster>
     </StrictMode>
 );

@@ -36,10 +36,10 @@ const Navbar = () => {
                         <li>
                             <a href="#about">About Me</a>
                         </li>
-                        <li >
+                        <li>
                             <a href="#skill">Skill</a>
                         </li>
-                        
+
                         <li>
                             <a href="#project">Project</a>
                         </li>
@@ -61,7 +61,7 @@ const Navbar = () => {
                     <li>
                         <a href="#skill">Skill</a>
                     </li>
-                    
+
                     <li>
                         <a href="#project">Project</a>
                     </li>
@@ -71,7 +71,13 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn p-2 md:p-4 bg-blue-600 hover:bg-blue-700">Download Resume</a>
+                <a
+                    href="/my-cv.pdf"
+                    download
+                    className="btn p-2 md:p-4 bg-blue-600 hover:bg-blue-700"
+                >
+                    Download Resume
+                </a>
             </div>
         </div>
     );

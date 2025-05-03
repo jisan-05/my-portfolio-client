@@ -18,7 +18,7 @@ const AboutMe = () => {
     }, []);
 
     return (
-        <div>
+        <div className="overflow-x-hidden">
             <div className="pt-14 pb-14 md:pt-44 md:mb-44" id="about">
                 <div className="text-center ">
                     <h3 className="text-3xl md:text-[44px] text-center">
@@ -28,19 +28,19 @@ const AboutMe = () => {
                         Learn more about me
                     </p>
                 </div>
-                <div className="flex flex-col lg:flex-row items-center mt-14">
+                <div className="flex flex-col lg:flex-row items-center mt-14 px-2">
                     <div
                         data-aos="fade-right"
                         className="w-full lg:w-1/2"
                     >
                         <Lottie
                             animationData={laptopAnimation}
-                            className=""
+                            className="w-full  mx-auto"
                         ></Lottie>
                     </div>
                     <div
                         data-aos="fade-left"
-                        className="w-full lg:w-1/2"
+                        className="w-full lg:w-1/2 px-2"
                     >
                         <p className="mx-auto lg:text-xl">
                             Hi, I'm Tanvir Ahmed Jisan, a passionate frontend

@@ -47,7 +47,7 @@ const Contact = () => {
 
     useEffect(() => {
         AOS.init({
-            duration: 1000, // Animation duration
+            duration: 1300, // Animation duration
             once: false, // Whether animation should happen only once while scrolling down
             delay: 100,
             disable: "mobile",
@@ -55,8 +55,8 @@ const Contact = () => {
     }, []);
 
     return (
-        <div>
-            <Toaster></Toaster>
+        <div className="overflow-x-hidden">
+           
             <div className="pt-14 md:pt-44 md:pb-44" id="contact">
                 <h2 className=" text-3xl md:text-[44px] text-center mb-16">
                     Contact With Me
@@ -141,7 +141,7 @@ const Contact = () => {
                         </div>
                         {loading ? (
                             <button className="btn bg-blue-600 hover:bg-blue-700 w-full mt-5">
-                                Submit{" "}
+                                
                                 <span className="loading loading-infinity loading-xl"></span>
                             </button>
                         ) : (

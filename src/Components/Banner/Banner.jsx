@@ -85,9 +85,13 @@ const Banner = () => {
                     </a>
                 </div>
                 <div className="">
-                    <button className="btn p-3 md:p-5 bg-blue-600 hover:bg-blue-700 hover:translate-y-[3px] transition-all duration-400">
+                    <a
+                        href="/my-cv.pdf"
+                        download
+                        className="btn p-3 md:p-5 bg-blue-600 hover:bg-blue-700 hover:translate-y-[3px] transition-all duration-400"
+                    >
                         Download Resume <FaArrowDown />
-                    </button>
+                    </a>
                 </div>
             </div>
             <div data-aos="fade-up" className="hidden md:flex md:w-1/2 ">
