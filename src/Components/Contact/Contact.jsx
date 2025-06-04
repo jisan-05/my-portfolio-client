@@ -55,7 +55,7 @@ const Contact = () => {
     }, []);
 
     return (
-        <div className="overflow-x-hidden">
+        <div className="overflow-x-hidden 2xl:overflow-x-visible">
            
             <div className="pt-14 md:pt-44 md:pb-44" id="contact">
                 <h2 className=" text-3xl md:text-[44px] text-center mb-16">

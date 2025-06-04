@@ -77,7 +77,7 @@ const Banner = () => {
                         <FaLinkedin></FaLinkedin>
                     </a>
                     <a
-                        href="https://www.facebook.com/tanvir.ahmed.jisan.2024/"
+                        href="https://www.facebook.com/jisan0555/"
                         className="text-4xl"
                         target="_blank"
                     >

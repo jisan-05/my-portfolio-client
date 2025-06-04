@@ -4,10 +4,7 @@ import laptopAnimation from "../../assets/laptop-animation.json";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-
-
 const AboutMe = () => {
-
     useEffect(() => {
         AOS.init({
             duration: 1000, // Animation duration
@@ -18,7 +15,7 @@ const AboutMe = () => {
     }, []);
 
     return (
-        <div className="overflow-x-hidden">
+        <div className="overflow-x-hidden 2xl:overflow-x-visible">
             <div className="pt-14 pb-14 md:pt-44 md:mb-44" id="about">
                 <div className="text-center ">
                     <h3 className="text-3xl md:text-[44px] text-center">
@@ -29,20 +26,14 @@ const AboutMe = () => {
                     </p>
                 </div>
                 <div className="flex flex-col lg:flex-row items-center mt-14 px-2">
-                    <div
-                        data-aos="fade-right"
-                        className="w-full lg:w-1/2"
-                    >
+                    <div data-aos="fade-right" className="w-full lg:w-1/2">
                         <Lottie
                             animationData={laptopAnimation}
                             className="w-full  mx-auto"
                         ></Lottie>
                     </div>
-                    <div
-                        data-aos="fade-left"
-                        className="w-full lg:w-1/2 px-2"
-                    >
-                        <p className="mx-auto lg:text-xl">
+                    <div data-aos="fade-left" className="w-full lg:w-1/2 px-2 ">
+                        <p className="mx-auto lg:text-lg xl:text-xl">
                             Hi, I'm Tanvir Ahmed Jisan, a passionate frontend
                             developer with a strong foundation in HTML, CSS,
                             JavaScript, React, Node.js, Express.js, MongoDB, Git
