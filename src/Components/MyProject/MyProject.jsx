@@ -30,17 +30,15 @@ const MyProject = () => {
                             <img src={project1} alt="Project1" />
                         </figure>
                         <div className="card-body">
-                            <h2 className="card-title">Job Portal Website</h2>
+                            <h2 className="card-title">Furniture Rental Website</h2>
                             <p>
-                                A modern MERN stack job portal with user
-                                registration, job posting, applications, and
-                                smooth real-time performance.
+                                A modern and responsive furniture rental website built with a clean UI, featuring furniture catalog, booking functionality, and seamless user experience.
                             </p>
                             <div className="card-actions">
                                 <a
                                     className="w-full"
                                     target="_blank"
-                                    href="https://job-portal-a-1852b.web.app/"
+                                    href="https://luxuryfurnitureco.com"
                                 >
                                     {" "}
                                     <button className="btn bg-blue-600 hover:bg-blue-700 w-full">
