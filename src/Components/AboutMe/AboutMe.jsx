@@ -35,8 +35,8 @@ const AboutMe = () => {
                     <div data-aos="fade-left" className="w-full lg:w-1/2 px-2 ">
                         <p className="mx-auto lg:text-lg xl:text-xl">
                             Hi, I'm Tanvir Ahmed Jisan, a passionate frontend
-                            developer with a strong foundation in HTML, CSS,
-                            JavaScript, React, Node.js, Express.js, MongoDB, Git
+                            developer with a strong foundation in 
+                            JavaScript, React js, Next js, Node.js, Express.js ,Prisma ORM, PostgreSQL & MongoDB, Git
                             , and GitHub. I specialize in creating visually
                             appealing, responsive, and user-friendly web
                             experiences that combine aesthetics with

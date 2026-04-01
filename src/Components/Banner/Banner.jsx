@@ -49,8 +49,7 @@ const Banner = () => {
         <p>
           I'm Tanvir Ahmed Jisan , a passionate Frontend Developer and aspiring
           Full-Stack Developer from Bangladesh. My goal is to build impactful,
-          user-friendly web applications. I have expertise in HTML, CSS,
-          JavaScript, React, Node.js, Express, and MongoDB. Currently, I’m
+          user-friendly web applications. I have expertise in JavaScript, React. js, Next. js, Typescript, Node.js, Express, Prisma ORM, PostgreSQL & MongoDB. Currently, I’m
           focused on expanding my skills and exploring new tools and
           technologies. I strive to create beautiful, responsive, and functional
           websites that deliver exceptional user experiences.
