@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
-import me from "../../assets/me.jpeg";
+import me from "../../assets/jisan.jpg";
 
 import {
   FaArrowDown,
