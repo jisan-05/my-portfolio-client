@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import project1 from "../../assets/Project/project-1.png";
-import project2 from "../../assets/Project/project-2 .png";
-import project5 from "../../assets/Project/project-5.png";
-import project4 from "../../assets/Project/project-4.png";
+import project1 from "../../assets/Project/project-1.webp";
+import project2 from "../../assets/Project/project-2 .webp";
+import project5 from "../../assets/Project/project-5.webp";
+import project4 from "../../assets/Project/project-4.webp";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
